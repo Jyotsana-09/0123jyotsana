@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #161b22;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #30363d;
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #58a6ff;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #238636;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+input[type="submit"]:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://github.com/join" method="post">
+        <h2>GitHub Registration</h2>
+        
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Enter your username" required>
+        
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter your password" required minlength="6">
+        
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
