@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Product Grid</title> 
+  <style> 
+    body { 
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      margin: 0; 
+      background: #f5f5f5; 
+      padding: 20px; 
+    } 
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+    }
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px; 
+    }
+    .card { 
+      background: #fff; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+    }
+    .card img { 
+      width: 100%; 
+      height: 150px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    }
+    .card h3 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+    .card p { 
+      font-size: 14px; 
+      color: #555; 
+      margin: 4px 0; 
+    } 
+    .price { 
+      font-weight: bold; 
+      color: #007bff; 
+    }
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr);
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr;
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h2>Responsive Product Grid</h2> 
+<div class="grid"> 
+    <div class="card"> 
+      <img src="https://m.media-amazon.com/images/I/71rlmEZ6cjL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1"> 
+      <h3>Product 1</h3> 
+      <p>Boult GOBOULT (Formerly Z40 True Wireless in Ear Earbuds with 60H Playtime, Zen™ ENC Mic, Low Latency Gaming)</p> 
+      <p class="price">₹2,158</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img src="https://image.made-in-china.com/202f0j00UdHcWqMgHEoD/Poedagar-615-Business-Casual-Wristwatch-Waterproof-Luminous-Date-Week-Men-s-Watch.webp" alt="Product 2"> 
+      <h3>Product 2</h3> 
+      <p>Lorenz Analog Blue Dial Day & Date Edition Men's Wrist Watch- MK-1065A</p> 
+      <p class="price">₹999</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img src="https://m.media-amazon.com/images/I/71IkndTV28L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 3"> 
+      <h3>Product 3</h3> 
+      <p>Ratnavali Jewels American Diamond CZ Rose Gold Plated Designer Jewellery Set/Necklace Set with Chain & Earring</p> 
+      <p class="price">₹1,200</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <img src="https://m.media-amazon.com/images/I/618+TCm3XoL._SX679_.jpg" alt="Product 4"> 
+      <h3>Product 4</h3> 
+      <p>Amazon Echo Dot (5th Gen) | Smart speaker with Bigger sound, Motion Detection, Temperature Sensor, Alexa and Bluetooth| </p> 
+      <p class="price">₹5,499</p> 
+    </div> 
+  </div> 
+</body> 
+</html>
